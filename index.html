@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Biltmore Zoo</title>
+  <style>
+    /* General styling for the website */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff;
+    }
+
+    header {
+      background-color: #228B22; /* Dark green for header */
+      color: white;
+      text-align: center;
+      padding: 1.5em;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .intro {
+      text-align: center;
+      margin: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    /* Animal gallery section */
+    .animal-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .animal {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .animal img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .animal h2 {
+      background-color: #ff6347; /* Tomato red for animal names */
+      color: white;
+      margin: 0;
+      padding: 10px 0;
+    }
+
+    .animal p {
+      padding: 10px;
+      color: #555;
+      font-size: 16px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to the Biltmore Zoo</h1>
+  <p>Explore the wonders of wildlife</p>
+</header>
+
+<section class="intro">
+  <p>Our zoo is home to a diverse range of species from all over the world. Enjoy the beauty of nature as you explore our carefully crafted animal exhibits.</p>
+</section>
+
+<!-- Animal Gallery -->
+<div class="animal-gallery">
+  
+  <div class="animal">
+    <img src="https://files.worldwildlife.org/wwfcmsprod/images/Tiger_resting_Bandhavgarh_National_Park_India/hero_small/6aofsvaglm_Medium_WW226365.jpg" alt="Tiger">
+    <h2>Tiger</h2>
+    <p>The tiger is the largest of the cat species, known for its powerful build and striking orange-black striped coat.</p>
+  </div>
+
+  <div class="animal">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/African_Bush_Elephant.jpg" alt="Elephant">
+    <h2>Elephant</h2>
+    <p>Elephants are the largest land mammals on Earth, known for their intelligence, strong social bonds, and long trunks.</p>
+  </div>
+
+  <div class="animal">
+    <img src="https://d1jyxxz9imt9yb.cloudfront.net/animal/803/meta_image/regular/WR202206_GiraffeTranslocation_012_360559_reduced.jpg" alt="Giraffe">
+    <h2>Giraffe</h2>
+    <p>With their long necks and legs, giraffes are the tallest animals in the world and are a symbol of the African savannah.</p>
+  </div>
+
+  <div class="animal">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/640px-Grosser_Panda.JPG" alt="Panda">
+    <h2>Panda</h2>
+    <p>The giant panda is loved worldwide for its distinct black and white fur and its bamboo-based diet.</p>
+  </div>
+
+  <div class="animal">
+    <img src="https://cdn.britannica.com/29/150929-050-547070A1/lion-Kenya-Masai-Mara-National-Reserve.jpg" alt="Lion">
+    <h2>Lion</h2>
+    <p>Known as the king of the jungle, lions are powerful predators with a majestic mane and a fearsome roar.</p>
+  </div>
+
+  <div class="animal">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Bonnet_macaque_%28Macaca_radiata%29_Photograph_By_Shantanu_Kuveskar.jpg/220px-Bonnet_macaque_%28Macaca_radiata%29_Photograph_By_Shantanu_Kuveskar.jpg" alt="Monkey">
+    <h2>Monkey</h2>
+    <p>Monkeys are highly intelligent primates, known for their playful behavior and their use of tools in the wild.</p>
+  </div>
+      
+  <h1>Zoo Tickets Made Easy: Chat with Us</h1>
+
+  <div class="chatbot-container" id="chatbot-container">
+    <div class="chat-header">Chat with Us</div>
+    <div class="chat-content">
+        <iframe
+        width="350" height="430"
+        allow="microphone;"
+        
+        src="https://console.dialogflow.com/api-client/demo/embedded/4db3afed-3865-447f-9a5c-65c7c0eb841c">
+    </iframe>
+    </div>
+  </div>
+    
+  <!--<div class="chat-icon" id="chat-icon"> -->
+    <div class="chat-icon" id="chat-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 0 24 24">
+        <path d="M12 3C7.03 3 3 6.93 3 12c0 2.13.83 4.09 2.19 5.61l-1.2 3.37c-.16.44.28.87.71.71l3.37-1.2C9.91 20.17 11.87 21 14 21c4.97 0 9-3.93 9-9s-4.03-9-9-9zm-1 13H9v-2h2v2zm0-4H9V7h2v5zm4 4h-2v-2h2v2zm0-4h-2V7h2v5z"/>
+      </svg>
+    </div>
+
+   <!-- <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24"></svg>-->
+
+
+
+  <!--<iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/4db3afed-3865-447f-9a5c-65c7c0eb841c"></iframe> -->
+
+</div>
+
+<Footer><h3>Zoo Tickets Made Easy: Chat with Us</h3></Footer> 
+<!--<footer>--> 
+  <!--<p>&copy; 2024 City Zoo. All Rights Reserved.</p>
+</footer>
+ -->
+ <script>
+  const chatbotContainer = document.getElementById('chatbot-container');
+  const chatIcon = document.getElementById('chat-icon');
+
+  chatIcon.addEventListener('click', function() {
+    chatbotContainer.style.display = chatbotContainer.style.display === 'block' ? 'none' : 'block';
+  });
+
+  chatbotContainer.style.display = 'none';
+</script>
+
+
+</body>
+</html>
